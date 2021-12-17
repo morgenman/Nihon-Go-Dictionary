@@ -1,0 +1,33 @@
+<div class="container">
+   <h1>Japanese <=> English Dictionary</h1>
+   <h2>Press the button corresponding to the language inputted.</h2>
+   <form method="POST" action="/">
+      <input type="text" name="task" id="task" >
+      <button type="submit" id="submit">English</button>      
+      <button type="submit" formaction="/kanji" id="submitKanj">Kanji</button>
+      <button type="submit" formaction="/kana" id="submitKana">Kana</button>
+      <button type="submit"formmethod="get" id="random">Random</button>
+   </form>
+
+   
+   <div id="tasks_container">
+      <ul>
+         
+         <table  style="width:100%; text-align:left;">
+            <tr>
+               <th>PoS</th>
+               <th>Japanese</th>
+           
+               
+               <th>English Translation</th>
+            </tr>
+            {{#each items}}
+            <tr>
+               <td>{{Pos}}</td><td><span><strong>{{ReadingKanji}}</strong></span> <span>{{ReadingKana}}</span></td>   <td>{{English2}}</td>
+            </tr>
+            {{/each}}
+      </ul>
+   </div>
+   <div style="position:fixed;text-shadow: 2px 2px 5px; #ffffff;bottom:10px;font-size:small;text-align:center;"> Created by Dylan Morgen
+</div>
+</div>

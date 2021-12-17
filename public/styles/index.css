@@ -1,0 +1,35 @@
+body {
+  min-width: 60%;
+  width: 80%;
+  margin: auto;
+  font-family: "Bahnschrift";
+  padding:5px;
+}
+.container {
+  background-color: #add8e6;
+  padding: 2%
+}
+h1 {
+  color: navy;
+}
+th, td {
+  padding: 5px;
+  vertical-align: top;
+}
+#task {
+  padding: 1% 2%;
+  border-color: navy;
+}
+#submit, #random, #submitKanj, #submitKana{
+  padding: 1% 2%;
+  border-color: navy;
+  background-color: navy;
+  color: white;
+  cursor: pointer;
+}
+tr:nth-child(even) {background-color: #c6e6f0;}
+ul{padding-inline-start: 0px;}
+
+ span {
+  display: block;
+}
